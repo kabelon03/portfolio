@@ -1,0 +1,22 @@
+tags used:
+html
+head
+titl
+body
+footer
+div
+section
+nav
+header
+button
+p
+ol
+ul
+li
+a
+
+JS implimention:
+for darkmode
+
+Bootstrap implementation:
+hero and features

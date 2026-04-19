@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="styles.css" rel="stylesheet" />
+    <title>Kabelo</title>
+
+    <!-- Favicon to stop 404 -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Sticky header */
+      header {
+        position: sticky;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .dark-mode header {
+        background-color: rgba(18, 18, 18, 0.98);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      section {
+        scroll-margin-top: 100px;
+      }
+
+      .nav-link {
+        position: relative;
+        transition: color 0.3s ease;
+      }
+
+      .nav-link.active {
+        color: #0d6efd !important;
+        font-weight: 600;
+      }
+
+      .dark-mode .nav-link.active {
+        color: #6ea8fe !important;
+      }
+
+      .circle-photo {
+        border-radius: 50%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .dark-mode .circle-photo {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="container py-3">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 class="mb-0 fs-3">Kabelo</h1>
+
+        <nav>
+          <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#technologies">Tech</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#now">Now</a></li>
+          </ul>
+        </nav>
+
+        <button id="darkModeBtn" class="btn btn-outline-secondary">
+          🌙 Dark Mode
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home Section - Replace with this -->
+      <section id="home" class="container my-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6 text-center">
+            <img
+              src="image/1766312617840.jpg"
+              class="profile-photo img-fluid"
+              alt="Picture of Kabelo"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              Hi! I’m Kabelo 👋
+            </h1>
+            <p class="lead">
+              I’m passionate about learning, creating, and constantly improving
+              myself. I focus on Python, JavaScript, and building useful
+              software.
+            </p>
+            <a href="#about" class="btn btn-primary btn-lg px-5">
+              Learn more about me
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="container my-5 py-5">
+        <div class="text-center mb-5">
+          <h2 class="display-6 fw-bold">About Me</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h2 class="text-center">Resume</h2>
+
+            <h3>Professional Summary</h3>
+            <p class="lead">
+              I'm an Administrative Professional with a strong foundation in
+              data entry, records management, and office support. Proficient in
+              Microsoft Office, Google Workspace, and data management systems.
+              Recently completed Harvard’s CS50 Python programming course,
+              adding technical depth to my IT support skills.
+            </p>
+
+            <h3>Work Experience</h3>
+            <h4>Administrative Clerk</h4>
+            <p>
+              <strong>Soshanguve, Pretoria</strong> <br />
+              <em>October 2022 – February 2024</em>
+            </p>
+            <ul>
+              <li>
+                Maintained accurate patient files and digital records using
+                clinic software.
+              </li>
+              <li>
+                Organized documentation systems, reducing operational delays.
+              </li>
+              <li>
+                Coordinated office supplies and inter-department file delivery
+                to optimize workflows.
+              </li>
+              <li>
+                Handled confidential data, ensuring timely documentation of test
+                results.
+              </li>
+              <li>
+                Implemented office procedures that reduced errors and improved
+                efficiency.
+              </li>
+            </ul>
+
+            <h4>Customer Service Assistant (Part-time)</h4>
+            <p>
+              <strong>Steers, Pretoria North</strong> <br />
+              <em>April 2022 – July 2022</em>
+            </p>
+            <ul>
+              <li>
+                Supported inventory management using FIFO methods and maintained
+                accurate stock records.
+              </li>
+              <li>
+                Delivered excellent customer service in a fast-paced
+                environment.
+              </li>
+              <li>
+                Assisted customers with queries, developing strong interpersonal
+                and multitasking skills.
+              </li>
+            </ul>
+
+            <h3>Education</h3>
+            <p>
+              <strong>National Certificate in Tourism (NQF 2, 3, 4)</strong
+              ><br />
+              Tshwane South College
+            </p>
+
+            <h3>Certifications</h3>
+            <ul>
+              <li>
+                CS50 Introduction to Computer Science by Harvard University
+              </li>
+              <li>CS50 Introduction to Python by Harvard University</li>
+              <li>FNB App Academy Full Stack Development Program</li>
+            </ul>
+
+            <h3>Skills</h3>
+            <ul>
+              <li>
+                <strong>Administrative & IT Support:</strong> Data Entry, Filing
+                Systems, Record Management, Office Coordination, Calendar &
+                Email Management
+              </li>
+              <li>
+                <strong>Digital Tools:</strong> Microsoft Office, Google
+                Workspace, Microsoft 365, Online File Sharing
+              </li>
+              <li>
+                <strong>Technical:</strong> Basic Python Programming (loops,
+                conditionals, file handling, data structures)
+              </li>
+              <li>
+                <strong>Professional:</strong> Communication, Organization, Time
+                Management, Adaptability, Problem-Solving, Teamwork
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technologies Section -->
+      <section id="technologies" class="container my-5 py-5 bg-light rounded-3">
+        <h2 class="pb-2 border-bottom text-center mb-5">Technologies I Use</h2>
+
+        <div
+          class="row g-5 py-4 row-cols-1 row-cols-md-3 row-cols-lg-5 text-center"
+        >
+          <div class="col">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+              alt="Python"
+              width="85"
+              height="85"
+              class="mb-3"
+            />
+            <h3 class="fs-4 fw-bold">Python</h3>
+            <p class="small">Backend, automation, data analysis & scripting</p>
+          </div>
+          <div class="col">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              alt="JavaScript"
+              width="85"
+              height="85"
+              class="mb-3"
+            />
+            <h3 class="fs-4 fw-bold">JavaScript</h3>
+            <p class="small">Frontend, interactivity & web apps</p>
+          </div>
+          <div class="col">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+              alt="React"
+              width="85"
+              height="85"
+              class="mb-3"
+            />
+            <h3 class="fs-4 fw-bold">ReactJS</h3>
+            <p class="small">Modern single-page applications</p>
+          </div>
+          <div class="col">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+              alt="Bootstrap"
+              width="85"
+              height="85"
+              class="mb-3"
+            />
+            <h3 class="fs-4 fw-bold">Bootstrap</h3>
+            <p class="small">Responsive CSS framework & UI components</p>
+          </div>
+          <div class="col">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+              alt="Node.js"
+              width="85"
+              height="85"
+              class="mb-3"
+            />
+            <h3 class="fs-4 fw-bold">Node.js</h3>
+            <p class="small">Server-side JavaScript runtime & backend</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="container my-5 py-5">
+        <h2 class="pb-2 border-bottom text-center mb-5">My Projects</h2>
+
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="image/360464.png"
+                class="card-img-top"
+                alt="Job-Tracker"
+                style="
+                  height: 120px;
+                  object-fit: contain;
+                  padding: 10px;
+                  border-top-left-radius: 8px;
+                  border-top-right-radius: 8px;
+                "
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Job-Tracker</h5>
+                <p class="card-text">
+                  Web application to help users organize and manage job
+                  applications. Built as CS50 final project using Flask, Python,
+                  SQL, and HTML/CSS.
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="https://job-tracker-j8se.onrender.com/"
+                    class="btn btn-primary btn-sm me-2"
+                    target="_blank"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="https://github.com/kabelon03/Job-tracker.git"
+                    class="btn btn-outline-secondary btn-sm"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="card-footer text-muted small">
+                Python • Flask • SQLite
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 & 3 placeholders remain the same (you can replace them later) -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="image/Web-Scraper-Logo-Vector.svg-.png"
+                class="card-img-top"
+                alt="Job-Tracker"
+                style="
+                  height: 120px;
+                  object-fit: contain;
+                  padding: 10px;
+                  border-top-left-radius: 8px;
+                  border-top-right-radius: 8px;
+                "
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Web-Scraper</h5>
+                <p class="card-text">
+                  A web scraper + clean dashboard that fetches and displays the
+                  latest government job vacancies from the official DPSA
+                  (Department of Public Service and Administration) website.
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="https://south-africa-government-jobs-scraper-hhieqzisongnsmbhnkpykc.streamlit.app/"
+                    class="btn btn-primary btn-sm me-2"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="https://github.com/kabelon03/south-africa-government-jobs-scraper.git"
+                    class="btn btn-outline-secondary btn-sm"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="card-footer text-muted small">
+                Pyhton • Streamlite • MongoDB
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="image/automation.webp"
+                class="card-img-top"
+                alt="Job-Tracker"
+                style="
+                  height: 120px;
+                  object-fit: contain;
+                  padding: 10px;
+                  border-top-left-radius: 8px;
+                  border-top-right-radius: 8px;
+                "
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Email Automation</h5>
+                <p class="card-text">
+                  A Python automation tool that tracks job applications and
+                  automatically sends follow-up emails after 7 days.
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="https://job-application-email-automation-hr3vqnlo6n9ouun7bxk8g6.streamlit.app/"
+                    class="btn btn-primary btn-sm me-2"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="https://github.com/kabelon03/job-application-email-automation"
+                    class="btn btn-outline-secondary btn-sm"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="card-footer text-muted small">
+                Python • streamlite • SQLlite
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a
+            href="https://github.com/kabelon03"
+            class="btn btn-outline-primary px-4"
+            target="_blank"
+          >
+            View All Projects on GitHub
+          </a>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="container my-5 py-5">
+        <div class="text-center mb-5">
+          <h2 class="display-6 fw-bold">Get In Touch</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <p class="lead">I'd love to hear from you!</p>
+            <p>
+              Email:
+              <a href="mailto:kabelon03@gmail.com" class="text-decoration-none"
+                >kabelon03@gmail.com</a
+              ><br />
+              Or find me on
+              <a
+                href="https://www.linkedin.com/in/kabelo-nkabinde-63865b240/"
+                target="_blank"
+                >LinkedIn</a
+              >
+              /
+              <a href="https://github.com/kabelon03" target="_blank">GitHub</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Now Section -->
+      <section id="now" class="container my-5 py-5 bg-light rounded-3">
+        <div class="text-center">
+          <h2 class="display-6 fw-bold">What I'm Doing Now</h2>
+          <p class="lead mt-4">
+            I’m exploring full-stack development and getting into AI. I enjoy
+            the process of debugging, learning from mistakes, and gradually
+            getting better with every project. Right now, I’m focused on
+            becoming a strong software engineer and creating things that
+            actually work and make an impact.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center py-4 bg-dark text-white mt-5">
+      Copyright © Kabelo 2026
+    </footer>
+
+    <!-- Dark Mode + Active Nav Script -->
+    <script>
+      // Dark Mode
+      const darkModeBtn = document.getElementById("darkModeBtn");
+      const body = document.body;
+
+      if (
+        localStorage.getItem("darkMode") === "enabled" ||
+        (!localStorage.getItem("darkMode") &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        body.classList.add("dark-mode");
+        darkModeBtn.textContent = "☀️ Light Mode";
+      }
+
+      darkModeBtn.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        if (body.classList.contains("dark-mode")) {
+          localStorage.setItem("darkMode", "enabled");
+          darkModeBtn.textContent = "☀️ Light Mode";
+        } else {
+          localStorage.setItem("darkMode", "disabled");
+          darkModeBtn.textContent = "🌙 Dark Mode";
+        }
+      });
+
+      // Active Navigation Link
+      const navLinks = document.querySelectorAll(".nav-link");
+      const sections = document.querySelectorAll("section");
+
+      function updateActiveLink() {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (scrollY >= sectionTop - 150) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", updateActiveLink);
+      updateActiveLink(); // Run once on load
+    </script>
+  </body>
+</html>

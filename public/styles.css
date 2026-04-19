@@ -1,0 +1,112 @@
+body {
+    width: 80%;
+    margin: auto;
+    background-color: #eafafe;
+}
+
+header {
+    text-align: center;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
+.circle-photo {
+    border-radius: 50%;
+}
+
+/* styles.css */
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Add this to your styles.css */
+
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .bg-light {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0;
+}
+
+.dark-mode .text-body-emphasis {
+  color: #ffffff !important;
+}
+
+.dark-mode .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* Make logos look good in both light and dark mode */
+.technology-icon {
+  filter: brightness(1);
+  transition: transform 0.3s ease;
+}
+
+.technology-icon:hover {
+  transform: scale(1.1);
+}
+
+.dark-mode .technology-icon {
+  filter: brightness(0.95);   /* Slight adjustment for dark background */
+}
+
+.dark-mode .bg-light {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0;
+  border: 1px solid #333;
+}
+
+.dark-mode .card-footer {
+  background-color: #252525 !important;
+  color: #aaaaaa;
+}
+
+/* Responsive Profile Photo */
+.profile-photo {
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.dark-mode .profile-photo {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+}
+
+/* Smaller on mobile */
+@media (max-width: 576px) {
+  .profile-photo {
+    max-width: 240px;
+  }
+}
