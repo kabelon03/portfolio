@@ -3,7 +3,7 @@
 A personal portfolio website showcasing my projects, skills, and experience as an aspiring software engineer.
 
 ## Live Demo
-[Coming Soon]
+[[Coming Soon](https://kabelon03.github.io/portfolio)]
 
 ## Sections
 - **Home** – Introduction and a quick overview of who I am
