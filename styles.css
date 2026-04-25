@@ -69,10 +69,13 @@ header {
 
 /* Hamburger nav collapses cleanly on mobile */
 .navbar-brand {
-  font-size: 1.25rem;
-  font-weight: 700;
+  color: #000000 !important;
+  transition: color 0.3s ease;
 }
 
+.dark-mode .navbar-brand {
+  color: #ffffff !important;
+}
 /* Nav links */
 .nav-link {
   position: relative;
